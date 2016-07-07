@@ -71,7 +71,35 @@ const actions = {
   ['getAnswer'](sessionId, context, cb) {
     // Here should go the api call, e.g.:
     // context.forecast = apiCall(context.loc)
-    FB.fbMessage(context._fbid_,"Got Till Here!",cb)
+    let messageEducation = {
+        "attachment": {
+            "type": "template",
+            "payload": {
+                "template_type": "generic",
+                "elements": [{
+                    "title": "Electrical Engineering",
+                    "subtitle": "2019 at Illinois Institute of Technology",
+                    //"image_url": "https://www.royalcanin.com/~/media/Royal-Canin/Product-Categories/cat-adult-landing-hero.ashx",
+                    "buttons": [{
+                        "type": "web_url",
+                        "url": "http://web.iit.edu/",
+                        "title": "My University"
+                    }],
+                }, {
+                    "title": "A Levels",
+                    "subtitle": "2015 at The City Schools",
+                    //"image_url": "http://messengerdemo.parseapp.com/img/gearvr.png",
+                    "buttons": [{
+                        "type": "web_url",
+                        "url": "http://thecityschool.edu.pk/category/central-region/iqbal-campus-sialkot/",
+                        "title": "My School",
+                    }],
+                }]
+            }
+        }
+    }
+
+    FB.fbMessage(context._fbid_,messageEducation,cb)
     cb(context);
   },
 };
