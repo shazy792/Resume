@@ -71,35 +71,30 @@ const actions = {
   ['getAnswer'](sessionId, context, cb) {
     // Here should go the api call, e.g.:
     // context.forecast = apiCall(context.loc)
-    let messageEducation = {
+    let messageSkills = {
         "attachment": {
             "type": "template",
             "payload": {
-                "template_type": "generic",
-                "elements": [{
-                    "title": "Electrical Engineering",
-                    "subtitle": "2019 at Illinois Institute of Technology",
-                    //"image_url": "https://www.royalcanin.com/~/media/Royal-Canin/Product-Categories/cat-adult-landing-hero.ashx",
+                "template_type": "button",
+                    "text": "What of my skills would you like to know?",
                     "buttons": [{
-                        "type": "web_url",
-                        "url": "http://web.iit.edu/",
-                        "title": "My University"
+                        "type": "postback",
+                        "title": "Programming languages",
+                        "payload": "sx1"
+                    }, {
+                        "type": "postback",
+                        "title": "Hardware Boards",
+                        "payload": "sx2",
+                    }, {
+                        "type": "postback",
+                        "title": "Database Engines",
+                        "payload": "sx3",
                     }],
-                }, {
-                    "title": "A Levels",
-                    "subtitle": "2015 at The City Schools",
-                    //"image_url": "http://messengerdemo.parseapp.com/img/gearvr.png",
-                    "buttons": [{
-                        "type": "web_url",
-                        "url": "http://thecityschool.edu.pk/category/central-region/iqbal-campus-sialkot/",
-                        "title": "My School",
-                    }],
-                }]
             }
         }
     }
 
-    FB.fbMessage(context._fbid_,messageEducation,cb)
+    FB.fbMessage(context._fbid_,messageSkills,cb)
     cb(context);
   },
 };
