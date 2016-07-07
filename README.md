@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Wit-Facebook
 [![Build Status](https://travis-ci.org/hunkim/Wit-Facebook.svg?branch=master)](https://travis-ci.org/hunkim/Wit-Facebook)
 [![Codacy Badge](https://api.codacy.com/project/badge/grade/7442b6c4eb6b48a890d751c0da5a3b6d)](https://www.codacy.com/app/hunkim/Wit-Facebook)
@@ -175,3 +176,6 @@ I reused soruce code and configuration from:
 
 ## Contribution
 We welcome your comments and PRs!
+=======
+# Resume
+>>>>>>> 8a3b3b698a59d197f1a916f7b59be1778474137d
