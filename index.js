@@ -92,14 +92,26 @@ app.post('/webhook', (req, res) => {
     // We retrieve the message content
     const msg = messaging.message.text;
     const atts = messaging.message.attachments;
+    const payload = messaging.payload;
 
-    if (atts) {
+    if (payload){
+    	// We recieved a Payload
+    	console.log("Payload recieved and Ignored for now!")
+    	console.log(payload);
+    	let mes = {text:'Got Payload'}
+      FB.fbMessage(
+        sender,
+        mes
+      );
+
+    } else if (atts) {
       // We received an attachment
 
       // Let's reply with an automatic message
+      let mes = {text:'Sorry I can only process text messages for now.'}
       FB.fbMessage(
         sender,
-        'Sorry I can only process text messages for now.'
+        mes
       );
     } else if (msg) {
       // We received a text message
