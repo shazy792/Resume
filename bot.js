@@ -31,7 +31,7 @@ const actions = {
     // Our bot has something to say!
     // Let's retrieve the Facebook user whose session belongs to from context
     // TODO: need to get Facebook user name
-    const recipientId = context._fbid_;
+    /*const recipientId = context._fbid_;
     if (recipientId) {
       // Yay, we found our recipient!
       // Let's forward our bot response to her.
@@ -52,14 +52,13 @@ const actions = {
       console.log('Oops! Couldn\'t find user in context:', context);
       // Giving the wheel back to our bot
       cb();
-    }
+    }*/
+    cb();
   },
   merge(sessionId, context, entities, message, cb) {
     // Retrieve the location entity and store it into a context field
-    const loc = firstEntityValue(entities, 'location');
-    if (loc) {
-      context.loc = loc; // store it in context
-    }
+    const ques = firstEntityValue(entities, 'question');
+    context.question = ques;
 
     cb(context);
   },
