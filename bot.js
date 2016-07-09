@@ -72,7 +72,8 @@ const actions = {
     // Here should go the api call, e.g.:
     // context.forecast = apiCall(context.loc)
     // Add Question Handler Here!!
-    let messageSkills = {
+    questionHandler(context);
+    /*let messageSkills = {
         "attachment": {
             "type": "template",
             "payload": {
@@ -95,7 +96,7 @@ const actions = {
         }
     }
 
-    FB.fbMessage(context._fbid_,messageSkills,cb)
+    FB.fbMessage(context._fbid_,messageSkills,cb)*/
     cb(context);
   },
 };
@@ -113,4 +114,52 @@ if (require.main === module) {
   console.log("Bot testing mode.");
   const client = getWit();
   client.interactive();
+}
+
+// Function to handle data response to the Queries made by wit
+function questionHandler(context){
+  switch(context.question){
+    case 'Education':
+      let mes = {text: "Got to here " + question + ", Please contact Shahzil for more information"};
+      FB.fbMessage(
+        context._fbid_,
+        mes
+        );
+    break;
+    case 'Skills':
+      let mes = {text: "Got to here " + question + ", Please contact Shahzil for more information"};
+      FB.fbMessage(
+        context._fbid_,
+        mes
+        );
+    break;
+    case 'Experience':
+      let mes = {text: "Got to here " + question + ", Please contact Shahzil for more information"};
+      FB.fbMessage(
+        context._fbid_,
+        mes
+        );
+    break;
+    case 'Personal':
+      let mes = {text: "Got to here " + question + ", Please contact Shahzil for more information"};
+      FB.fbMessage(
+        context._fbid_,
+        mes
+        );
+    break;
+    case 'Projects':
+      let mes = {text: "Got to here " + question + ", Please contact Shahzil for more information"};
+      FB.fbMessage(
+        context._fbid_,
+        mes
+        );
+    break;
+    default:
+      let mes = {text: "I am sorry but I don't know anything about " + question + ", Please contact Shahzil for more information"};
+      FB.fbMessage(
+        context._fbid_,
+        mes
+        );
+  }
+
 }
