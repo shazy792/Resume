@@ -71,6 +71,7 @@ const actions = {
   ['getAnswer'](sessionId, context, cb) {
     // Here should go the api call, e.g.:
     // context.forecast = apiCall(context.loc)
+    // Add Question Handler Here!!
     let messageSkills = {
         "attachment": {
             "type": "template",
