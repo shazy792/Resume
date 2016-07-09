@@ -120,6 +120,7 @@ if (require.main === module) {
 function questionHandler(context, cb){
   switch(context.question){
     case 'education':
+    case 'school':
       FB.fbMessage(
         context._fbid_,
         {text:"YOHIJIHIJOJNIJ"},
