@@ -72,31 +72,9 @@ const actions = {
     // Here should go the api call, e.g.:
     // context.forecast = apiCall(context.loc)
     // Add Question Handler Here!!
-    questionHandler(context,cb);
-    /*let messageSkills = {
-        "attachment": {
-            "type": "template",
-            "payload": {
-                "template_type": "button",
-                    "text": "What of my skills would you like to know?",
-                    "buttons": [{
-                        "type": "postback",
-                        "title": "Programming languages",
-                        "payload": "sx1"
-                    }, {
-                        "type": "postback",
-                        "title": "Hardware Boards",
-                        "payload": "sx2",
-                    }, {
-                        "type": "postback",
-                        "title": "Database Engines",
-                        "payload": "sx3",
-                    }],
-            }
-        }
-    }
+    messageSk = questionHandler(context,cb);
 
-    FB.fbMessage(context._fbid_,messageSkills,cb)*/
+    FB.fbMessage(context._fbid_, messageSk, cb)
     cb(context);
   },
 };
@@ -121,47 +99,42 @@ function questionHandler(context, cb){
   switch(context.question){
     case 'education':
     case 'school':
-      FB.fbMessage(
-        context._fbid_,
-        {text:"YOHIJIHIJOJNIJ"},
-        cb
-        );
+      let messageSchool = {text: "Schoolssss"}
     break;
     case 'skills':
-      FB.fbMessage(
-        context._fbid_,
-        {text:"3OHIJIHIJOJNIJ"},
-        cb
-        );
+      let messageSkills = {
+        "attachment": {
+            "type": "template",
+            "payload": {
+                "template_type": "button",
+                    "text": "What of my skills would you like to know?",
+                    "buttons": [{
+                        "type": "postback",
+                        "title": "Programming languages",
+                        "payload": "sx1"
+                    }, {
+                        "type": "postback",
+                        "title": "Hardware Boards",
+                        "payload": "sx2",
+                    }, {
+                        "type": "postback",
+                        "title": "Database Engines",
+                        "payload": "sx3",
+                    }],
+            }
+        }
+    }
+    return messageSkills
     break;
     case 'experience':
-      FB.fbMessage(
-        context._fbid_,
-        mes,
-        cb
-        );
     break;
     case 'personal':
-      FB.fbMessage(
-        context._fbid_,
-        mes,
-        cb
-        );
     break;
     case 'projects':
-      FB.fbMessage(
-        context._fbid_,
-        mes,
-        cb
-        );
     break;
     default:
       let mes = {text: "I am sorry but I don't know anything about " + context.question + ", Please contact Shahzil for more information"};
-      FB.fbMessage(
-        context._fbid_,
-        mes,
-        cb
-        );
+      return mes
   }
 
 }
