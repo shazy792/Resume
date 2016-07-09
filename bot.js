@@ -155,7 +155,7 @@ function questionHandler(context, cb){
         );
     break;
     default:
-      let mes = {text: "I am sorry but I don't know anything about " + question + ", Please contact Shahzil for more information"};
+      let mes = {text: "I am sorry but I don't know anything about " + context.question + ", Please contact Shahzil for more information"};
       FB.fbMessage(
         context._fbid_,
         mes,
