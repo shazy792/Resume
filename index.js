@@ -82,11 +82,12 @@ app.post('/webhook', (req, res) => {
   if (messaging.postback){
   	console.log("Postback recieved and Ignored");
   	console.log(messaging.postback["payload"]);
-  	let mes = {text: "Postback Recived!"}
+  	let mes = {text: 'Postback Recived!'};
   	FB.fbMessage(
   		sender,
   		mes
   		);
+  	console.log("Here");
 
   }
 
