@@ -72,7 +72,7 @@ const actions = {
     // Here should go the api call, e.g.:
     // context.forecast = apiCall(context.loc)
     // Add Question Handler Here!!
-    questionHandler(context);
+    questionHandler(context,cb);
     /*let messageSkills = {
         "attachment": {
             "type": "template",
@@ -117,43 +117,49 @@ if (require.main === module) {
 }
 
 // Function to handle data response to the Queries made by wit
-function questionHandler(context){
+function questionHandler(context, cb){
   switch(context.question){
     case 'Education':
       FB.fbMessage(
         context._fbid_,
-        context.question
+        context.question,
+        cb
         );
     break;
     case 'Skills':
       FB.fbMessage(
         context._fbid_,
-        context.question
+        context.question,
+        cb
         );
     break;
     case 'Experience':
       FB.fbMessage(
         context._fbid_,
-        context.question
+        context.question,
+        cb
         );
     break;
     case 'Personal':
       FB.fbMessage(
         context._fbid_,
-        context.question
+        context.question,
+        cb
         );
     break;
     case 'Projects':
       FB.fbMessage(
         context._fbid_,
-        context.question
+        context.question,
+        cb
         );
     break;
     default:
       let mes = {text: "I am sorry but I don't know anything about " + question + ", Please contact Shahzil for more information"};
       FB.fbMessage(
         context._fbid_,
-        mes
+        mes,
+        cb
         );
   }
 
