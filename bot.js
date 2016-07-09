@@ -119,38 +119,43 @@ if (require.main === module) {
 // Function to handle data response to the Queries made by wit
 function questionHandler(context, cb){
   switch(context.question){
-    case 'Education':
+    case 'education':
+      let mes = {text: context.question};
       FB.fbMessage(
         context._fbid_,
-        context.question,
+        mes,
         cb
         );
     break;
-    case 'Skills':
+    case 'skills':
+      let mes = {text: context.question};
       FB.fbMessage(
         context._fbid_,
-        context.question,
+        mes,
         cb
         );
     break;
-    case 'Experience':
+    case 'experience':
+      let mes = {text: context.question};
       FB.fbMessage(
         context._fbid_,
-        context.question,
+        mes,
         cb
         );
     break;
-    case 'Personal':
+    case 'personal':
+      let mes = {text: context.question};
       FB.fbMessage(
         context._fbid_,
-        context.question,
+        mes,
         cb
         );
     break;
-    case 'Projects':
+    case 'projects':
+      let mes = {text: context.question};
       FB.fbMessage(
         context._fbid_,
-        context.question,
+        mes,
         cb
         );
     break;
