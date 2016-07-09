@@ -120,7 +120,7 @@ if (require.main === module) {
 function questionHandler(context, cb){
   switch(context.question){
     case 'education':
-      let mes = {text: context.question};
+      let mes = {text: "Yo " + context.question};
       FB.fbMessage(
         context._fbid_,
         mes,
@@ -128,7 +128,7 @@ function questionHandler(context, cb){
         );
     break;
     case 'skills':
-      let mes = {text: context.question};
+      let mes = {text: "Yo " + context.question};
       FB.fbMessage(
         context._fbid_,
         mes,
@@ -136,7 +136,7 @@ function questionHandler(context, cb){
         );
     break;
     case 'experience':
-      let mes = {text: context.question};
+      let mes = {text: "Yo " + context.question};
       FB.fbMessage(
         context._fbid_,
         mes,
@@ -144,7 +144,7 @@ function questionHandler(context, cb){
         );
     break;
     case 'personal':
-      let mes = {text: context.question};
+      let mes = {text: "Yo " + context.question};
       FB.fbMessage(
         context._fbid_,
         mes,
@@ -152,7 +152,7 @@ function questionHandler(context, cb){
         );
     break;
     case 'projects':
-      let mes = {text: context.question};
+      let mes = {text: "Yo " + context.question};
       FB.fbMessage(
         context._fbid_,
         mes,
