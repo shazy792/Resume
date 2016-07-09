@@ -72,14 +72,15 @@ const actions = {
     // Here should go the api call, e.g.:
     // context.forecast = apiCall(context.loc)
     // Add Question Handler Here!!
-    var messageSk = {text: "Blank"}
+    //var messageSk = {text: "Blank"}
     switch(context.question){
     case 'education':
     case 'school':
-      messageSk = {text: "Schoolssss"}
+      let messageSk = {text: "Schoolssss"}
+      FB.fbMessage(context._fbid_, messageSk, cb);
     break;
     case 'skills':
-      messageSk = {
+      let messageSkills = {
         "attachment": {
             "type": "template",
             "payload": {
@@ -101,6 +102,7 @@ const actions = {
             }
         }
     }
+    FB.fbMessage(context._fbid_, messageSkills, cb);
     break;
     case 'experience':
     break;
@@ -109,10 +111,9 @@ const actions = {
     case 'projects':
     break;
     default:
-      messageSk = {text: "I am sorry but I don't know anything about " + context.question + ", Please contact Shahzil for more information"};
+      let messageError = {text: "I am sorry but I don't know anything about " + context.question + ", Please contact Shahzil for more information"};
+      FB.fbMessage(context._fbid_, messageError, cb);
   }
-
-    FB.fbMessage(context._fbid_, messageSk, cb);
     // A call to cb() ??
     cb(context);
   },
