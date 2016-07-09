@@ -119,7 +119,7 @@ if (require.main === module) {
 // Function to handle data response to the Queries made by wit
 function questionHandler(context, cb){
   switch(context.question){
-    let mes = {text: "Yo " + context.question};
+    var mes = {text: "Yo " + context.question};
     case 'education':
       FB.fbMessage(
         context._fbid_,
