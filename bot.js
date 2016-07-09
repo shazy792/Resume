@@ -72,7 +72,45 @@ const actions = {
     // Here should go the api call, e.g.:
     // context.forecast = apiCall(context.loc)
     // Add Question Handler Here!!
-    messageSk = questionHandler(context,cb);
+    let messageSk = {text: "Nothing"};
+    switch(context.question){
+    case 'education':
+    case 'school':
+      messageSk = {text: "Schoolssss"}
+    break;
+    case 'skills':
+      messageSk = {
+        "attachment": {
+            "type": "template",
+            "payload": {
+                "template_type": "button",
+                    "text": "What of my skills would you like to know?",
+                    "buttons": [{
+                        "type": "postback",
+                        "title": "Programming languages",
+                        "payload": "sx1"
+                    }, {
+                        "type": "postback",
+                        "title": "Hardware Boards",
+                        "payload": "sx2",
+                    }, {
+                        "type": "postback",
+                        "title": "Database Engines",
+                        "payload": "sx3",
+                    }],
+            }
+        }
+    }
+    break;
+    case 'experience':
+    break;
+    case 'personal':
+    break;
+    case 'projects':
+    break;
+    default:
+      let messageSk = {text: "I am sorry but I don't know anything about " + context.question + ", Please contact Shahzil for more information"};
+  }
 
     FB.fbMessage(context._fbid_, messageSk, cb)
     cb(context);
@@ -95,46 +133,7 @@ if (require.main === module) {
 }
 
 // Function to handle data response to the Queries made by wit
-function questionHandler(context, cb){
-  switch(context.question){
-    case 'education':
-    case 'school':
-      let messageSchool = {text: "Schoolssss"}
-    break;
-    case 'skills':
-      let messageSkills = {
-        "attachment": {
-            "type": "template",
-            "payload": {
-                "template_type": "button",
-                    "text": "What of my skills would you like to know?",
-                    "buttons": [{
-                        "type": "postback",
-                        "title": "Programming languages",
-                        "payload": "sx1"
-                    }, {
-                        "type": "postback",
-                        "title": "Hardware Boards",
-                        "payload": "sx2",
-                    }, {
-                        "type": "postback",
-                        "title": "Database Engines",
-                        "payload": "sx3",
-                    }],
-            }
-        }
-    }
-    return messageSkills
-    break;
-    case 'experience':
-    break;
-    case 'personal':
-    break;
-    case 'projects':
-    break;
-    default:
-      let mes = {text: "I am sorry but I don't know anything about " + context.question + ", Please contact Shahzil for more information"};
-      return mes
-  }
+function questionHandler(context){
+  
 
 }
