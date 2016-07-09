@@ -120,38 +120,33 @@ if (require.main === module) {
 function questionHandler(context){
   switch(context.question){
     case 'Education':
-      let mes = {text: "Got to here " + question + ", Please contact Shahzil for more information"};
       FB.fbMessage(
         context._fbid_,
-        mes
+        context.question
         );
     break;
     case 'Skills':
-      let mes = {text: "Got to here " + question + ", Please contact Shahzil for more information"};
       FB.fbMessage(
         context._fbid_,
-        mes
+        context.question
         );
     break;
     case 'Experience':
-      let mes = {text: "Got to here " + question + ", Please contact Shahzil for more information"};
       FB.fbMessage(
         context._fbid_,
-        mes
+        context.question
         );
     break;
     case 'Personal':
-      let mes = {text: "Got to here " + question + ", Please contact Shahzil for more information"};
       FB.fbMessage(
         context._fbid_,
-        mes
+        context.question
         );
     break;
     case 'Projects':
-      let mes = {text: "Got to here " + question + ", Please contact Shahzil for more information"};
       FB.fbMessage(
         context._fbid_,
-        mes
+        context.question
         );
     break;
     default:
