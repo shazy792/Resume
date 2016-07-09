@@ -109,7 +109,7 @@ const actions = {
     case 'projects':
     break;
     default:
-      let messageSk = {text: "I am sorry but I don't know anything about " + context.question + ", Please contact Shahzil for more information"};
+      messageSk = {text: "I am sorry but I don't know anything about " + context.question + ", Please contact Shahzil for more information"};
   }
 
     FB.fbMessage(context._fbid_, messageSk, cb)
