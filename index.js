@@ -77,7 +77,9 @@ app.get('/webhook', (req, res) => {
 // The main message handler
 app.post('/webhook', (req, res) => {
   // Parsing the Messenger API response
-  const messaging = FB.getFirstMessagingEntry(req.body);
+  const messaging = FB.getFirstMessagingEntry(req.body); // Get Postback Event, Check Webhook array
+  console.log("Next folows the data from the webhook");
+  console.log(req);
   if (messaging && messaging.message) {
 
     // Yay! We got a new message!
@@ -92,9 +94,9 @@ app.post('/webhook', (req, res) => {
     // We retrieve the message content
     const msg = messaging.message.text;
     const atts = messaging.message.attachments;
-    const payload = messaging.payload;
+    //const payload = messaging.payload; Get Postback Event Here
 
-    if (payload){
+    if (postback){
     	// We recieved a Payload
     	console.log("Payload recieved and Ignored for now!")
     	console.log(payload);
