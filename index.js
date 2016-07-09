@@ -94,12 +94,12 @@ app.post('/webhook', (req, res) => {
     // We retrieve the message content
     const msg = messaging.message.text;
     const atts = messaging.message.attachments;
-    //const payload = messaging.payload; Get Postback Event Here
+    const postback = messaging.postback; //Get Postback Event Here
 
     if (postback){
     	// We recieved a Payload
     	console.log("Payload recieved and Ignored for now!")
-    	console.log(payload);
+    	console.log(postback["payload"]);
     	let mes = {text:'Got Payload'}
       FB.fbMessage(
         sender,
