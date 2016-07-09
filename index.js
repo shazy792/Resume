@@ -80,6 +80,7 @@ app.post('/webhook', (req, res) => {
   const messaging = FB.getFirstMessagingEntry(req.body); // Get Postback Event, Check Webhook array
 
   if (messaging.postback){
+  	const sender = messaging.sender.id;
   	console.log("Postback recieved and Ignored");
   	console.log(messaging.postback["payload"]);
   	let mes = {text: 'Postback Recived!'};
