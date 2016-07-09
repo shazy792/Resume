@@ -72,7 +72,7 @@ const actions = {
     // Here should go the api call, e.g.:
     // context.forecast = apiCall(context.loc)
     // Add Question Handler Here!!
-    let messageSk = {text: "Nothing"};
+    var messageSk = {text: "Blank"}
     switch(context.question){
     case 'education':
     case 'school':
@@ -112,7 +112,8 @@ const actions = {
       messageSk = {text: "I am sorry but I don't know anything about " + context.question + ", Please contact Shahzil for more information"};
   }
 
-    FB.fbMessage(context._fbid_, messageSk, cb)
+    FB.fbMessage(context._fbid_, messageSk, cb);
+    // A call to cb() ??
     cb(context);
   },
 };
