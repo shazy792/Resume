@@ -81,7 +81,9 @@ const actions = {
       //FB.fbMessage(context._fbid_, context.answer, cb);
     break;
     case 'skills':
-      FB.fbMessage(context._fbid_, {text: "Yols"}, cb);
+      FB.fbMessage(context._fbid_, {text: "Yols"});
+      console.log("Context: ", context)
+      cb(context);
     break;
     case 'experience':
     break;
