@@ -82,7 +82,6 @@ const actions = {
     break;
     case 'skills':
       FB.fbMessage(context._fbid_, {text: "Yols"}, cb);
-      cb();
     break;
     case 'experience':
     break;
