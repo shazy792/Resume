@@ -77,12 +77,12 @@ const actions = {
     switch(context.question){
     case 'education':
     case 'school':
-      context.answer = {text: "Schoolssss"}
-      FB.fbMessage(context._fbid_, context.answer, cb);
+      //context.answer = {text: "Schoolssss"}
+      //FB.fbMessage(context._fbid_, context.answer, cb);
     break;
     case 'skills':
-    context.answer = {text: "Yolo"}
-    FB.fbMessage(context._fbid_, context.answer, cb);
+      //context.answer = {text: "Yolo"}
+      //FB.fbMessage(context._fbid_, context.answer, cb);
     break;
     case 'experience':
     break;
@@ -91,12 +91,12 @@ const actions = {
     case 'projects':
     break;
     default:
-      let messageError = {text: "I am sorry but I don't know anything about " + context.question + ", Please contact Shahzil for more information"};
-      FB.fbMessage(context._fbid_, messageError, cb);
+      //let messageError = {text: "I am sorry but I don't know anything about " + context.question + ", Please contact Shahzil for more information"};
+      //FB.fbMessage(context._fbid_, messageError, cb);
   }
-    cb();
+    //cb();
     // A call to cb() ??
-    //cb(context);
+    cb(context);
   },
 };
 
