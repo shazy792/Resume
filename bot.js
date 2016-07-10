@@ -81,28 +81,7 @@ const actions = {
       FB.fbMessage(context._fbid_, context.answer, cb);
     break;
     case 'skills':
-      context.answer = {
-        "attachment": {
-            "type": "template",
-            "payload": {
-                "template_type": "button",
-                    "text": "What of my skills would you like to know?",
-                    "buttons": [{
-                        "type": "postback",
-                        "title": "Programming languages",
-                        "payload": "sx1"
-                    }, {
-                        "type": "postback",
-                        "title": "Hardware Boards",
-                        "payload": "sx2",
-                    }, {
-                        "type": "postback",
-                        "title": "Database Engines",
-                        "payload": "sx3",
-                    }],
-            }
-        }
-    }
+    context.answer = {text: "Yolo"}
     FB.fbMessage(context._fbid_, context.answer, cb);
     break;
     case 'experience':
