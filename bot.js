@@ -77,7 +77,7 @@ const actions = {
         msg = dat.messageEducation;
       break;
       case 'skills':
-        msg = {text: "Skills is triggered Bro!"};
+        msg = dat.messageSkills;
       break;
       case 'work':
       case 'experience':
