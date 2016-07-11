@@ -69,35 +69,19 @@ const actions = {
 
   // fetch-weather bot executes
   ['getAnswer'](sessionId, context, cb) {
-    // Here should go the api call, e.g.:
-    // context.forecast = apiCall(context.loc)
-    // Add Question Handler Here!!
-    //var messageSk = {text: "Blank"}
-    // Change FB Message 
+    let msg = {text: "NOTHING"};
     switch(context.question){
-    case 'education':
-    case 'school':
-      //context.answer = {text: "Schoolssss"}
-      //FB.fbMessage(context._fbid_, context.answer, cb);
-    break;
-    case 'skills':
-      FB.fbMessage(context._fbid_, {text: "Yols"});
-      console.log("Context: ", context)
-      cb(context);
-    break;
-    case 'experience':
-    break;
-    case 'personal':
-    break;
-    case 'projects':
-    break;
-    default:
-      //let messageError = {text: "I am sorry but I don't know anything about " + context.question + ", Please contact Shahzil for more information"};
-      //FB.fbMessage(context._fbid_, messageError, cb);
-  }
-    //cb();
-    // A call to cb() ??
-    //cb(context);
+      case 'education':
+        msg = {text:"Education is triggered!"};
+      break;
+      case 'skills':
+        msg = {text: "Skills is triggered Bro!"};
+      break;
+
+    }
+
+    FB.fbMessage(context._fbid_,msg,cb);
+    cb(context);
   },
 };
 
