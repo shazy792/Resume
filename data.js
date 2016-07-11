@@ -206,7 +206,8 @@ const messageProjects = {
                         "payload": "px2",
                     }],
                 }, {
-                    "title": "Facebook Messenger Chatbot"
+                    "title": "Facebook Messenger Chatbot",
+                    //"subtitle": "Intern 2014 - 2015",
                     //"image_url": "http://messengerdemo.parseapp.com/img/gearvr.png",
                     "buttons": [{
                         "type": "postback",
