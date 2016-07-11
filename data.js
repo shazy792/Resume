@@ -269,7 +269,12 @@ const messageContact = {
                 "type":"postback",
                 "title":"Start Chatting",
                 "payload":"USER_DEFINED_PAYLOAD"
-              }              
+              },
+              {
+                "type":"postback",
+                "title":"Start Chatting",
+                "payload":"USER_DEFINED_PAYLOAD"
+              }                            
               ],
                 }]
             }
