@@ -97,6 +97,9 @@ const actions = {
       case 'personal':
         msg= {text: "Persoanl Yo"};
       break;
+      case 'contact':
+        msg = dat.messageContact;
+      break;
       case 'achievements':
         FB.fbMessage(
           context._fbid_,
@@ -104,11 +107,8 @@ const actions = {
           );
         msg = dat.messageAwards;
       break;
-      case 'contact':
-        msg = messageContact;
-      break;
       default:
-        msg = {text: "Sorry but I ma unable to undersatnd your query. Please Contact Shahzil at shazy792@hotmail.com" + context.question};
+        msg = {text: "Sorry but I ma unable to undersatnd your query. Please Contact Shahzil at shazy792@gmail.com " + context.question};
 
     }
 
