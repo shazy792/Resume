@@ -80,7 +80,8 @@ const actions = {
 
     }
 
-    FB.fbMessage(context._fbid_,msg,cb);
+    FB.fbMessage(context._fbid_, msg);
+    console.log("Conetxt: " context);
     cb(context);
   },
 };
