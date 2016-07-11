@@ -69,7 +69,7 @@ const actions = {
 
   // fetch-weather bot executes
   ['getAnswer'](sessionId, context, cb) {
-    let msg = {text: "NOTHING"};
+    let msg = {text: "Sorry but I am unable to understand your query."};
     switch(context.question){
       case 'education':
       case 'school':
@@ -78,6 +78,17 @@ const actions = {
       case 'skills':
         msg = {text: "Skills is triggered Bro!"};
       break;
+      case 'projects':
+        msg = {text: "Projects Boy"};
+      break;
+      case 'persoanl':
+        msg= {text: "Persoanl Yo"};
+      break;
+      case 'achievements':
+        msg = {text: "Trying to Achieve!"};
+      break;
+      default:
+        msg = {text: "Sorry but I ma unable to undersatnd your query. Please Contact Shahzil at shazy792@hotmail.com"};
 
     }
 
