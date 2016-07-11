@@ -228,7 +228,7 @@ const messageProjects = {
         }
     }
 
-const messageAwards = {
+const messageAwards =   {
         "attachment": {
             "type": "template",
             "payload": {
@@ -255,6 +255,28 @@ const messageAwards = {
         }
     }
 
+const messageContact =   {
+        "attachment": {
+            "type": "template",
+            "payload": {
+                "template_type": "generic",
+                "elements": [{
+                    "title": "Shahzil Sheikh",
+                    "subtitle": "Phone: 312-852-0877\n Email: shazy792@gmail.com \n Github: shazy792",
+                    "buttons": [{
+                        "type": "web_url",
+                        "url": "mailto:shazy792@gmail.com",
+                        "title": "Email Me"
+                    }, {
+                        "type": "web_url",
+                        "url": "https://github.com/shazy792",
+                        "title": "Github"
+                    }],
+                }]
+            }
+        }
+    }
+
 
 // Whatever I am going to use outside of this file.
 module.exports = {
@@ -266,4 +288,5 @@ module.exports = {
   messageWork: messageWork,
   messageProjects: messageProjects,
   messageAwards: messageAwards,
+  messageContact: messageContact,
 };
