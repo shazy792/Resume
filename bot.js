@@ -86,8 +86,7 @@ const actions = {
           context._fbid_,
           {text: "Here is some of my previous work history."}
           );
-        //msg = dat.messageWork;
-        msg = dat.messageContact;
+        msg = dat.messageWork;
       break;
       case 'projects':
         FB.fbMessage(
@@ -100,6 +99,10 @@ const actions = {
         msg = {text: "Persoanl Yo"};
       break;
       case 'contact':
+        FB.fbMessage(
+          context._fbid_,
+          {text: "Contact Info"}
+          );
         msg = dat.messageContact;
       break;
       case 'achievements':

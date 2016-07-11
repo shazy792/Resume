@@ -255,7 +255,25 @@ const messageAwards =   {
         }
     }
 
-const messageContact = {text: "Blah Blah"};
+const messageContact = {
+        "attachment": {
+            "type": "template",
+            "payload": {
+                "template_type": "generic",
+                "elements": [{
+                    "title": "Electrical Engineering",
+                    "subtitle": "2019 at Illinois Institute of Technology",
+                    //"image_url": "https://www.royalcanin.com/~/media/Royal-Canin/Product-Categories/cat-adult-landing-hero.ashx",
+                    "buttons": [{
+                        "type": "web_url",
+                        "url": "http://web.iit.edu/",
+                        "title": "My University"
+                    }],
+                },]
+            }
+        }
+    }
+
 // const messageContact =  {
 //         "attachment": {
 //             "type": "template",
