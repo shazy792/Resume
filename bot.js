@@ -81,9 +81,11 @@ const actions = {
       break;
       case 'work':
       case 'experience':
-        console.log("Got here!");
+        FB.fbMessage(
+          context._fbid_,
+          {text: "Here is some of my previous work history."}
+          );
         msg = dat.messageWork;
-        console.log("And here!");
       break;
       case 'projects':
         msg = {text: "Projects Boy"};
