@@ -98,8 +98,7 @@ const actions = {
         msg= {text: "Persoanl Yo"};
       break;
       case 'contact':
-        msg = dat.messageContact;
-      break;
+      case 'Contact':
       case 'achievements':
         FB.fbMessage(
           context._fbid_,
