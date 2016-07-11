@@ -71,6 +71,7 @@ const actions = {
   // fetch-weather bot executes
   ['getAnswer'](sessionId, context, cb) {
     let msg = {text: "Sorry but I am unable to understand your query."};
+    console.log("Conetxt: ", context.question);
     switch(context.question){
       case 'education':
       case 'school':
@@ -95,10 +96,11 @@ const actions = {
         msg = dat.messageProjects;
       break;
       case 'personal':
-        msg= {text: "Persoanl Yo"};
+        msg = {text: "Persoanl Yo"};
       break;
       case 'contact':
-      case 'Contact':
+        msg = dat.messageContact;
+      break;
       case 'achievements':
         FB.fbMessage(
           context._fbid_,
