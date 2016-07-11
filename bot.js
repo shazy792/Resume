@@ -5,6 +5,7 @@
 const Wit = require('node-wit').Wit;
 const FB = require('./facebook.js');
 const Config = require('./const.js');
+const dat = require('./data.js');
 
 const firstEntityValue = (entities, entity) => {
   const val = entities && entities[entity] &&
@@ -69,35 +70,11 @@ const actions = {
 
   // fetch-weather bot executes
   ['getAnswer'](sessionId, context, cb) {
-
-    FB.fbMessage(context._fbid_, questionHandler());
-    //console.log("Conetxt: ", context);
-    cb(context);
-  },
-};
-
-
-const getWit = () => {
-  return new Wit(Config.WIT_TOKEN, actions);
-};
-
-exports.getWit = getWit;
-
-// bot testing mode
-// http://stackoverflow.com/questions/6398196
-if (require.main === module) {
-  console.log("Bot testing mode.");
-  const client = getWit();
-  client.interactive();
-}
-
-// Function to handle data response to the Queries made by wit
-function questionHandler(){
-  let msg = {text: "Sorry but I am unable to understand your query."};
+    let msg = {text: "Sorry but I am unable to understand your query."};
     switch(context.question){
       case 'education':
       case 'school':
-        msg = {text:"Education is triggered!"};
+        msg = dat.messageEducation;
       break;
       case 'skills':
         msg = {text: "Skills is triggered Bro!"};
@@ -120,6 +97,23 @@ function questionHandler(){
 
     }
 
-  return msg;
+    FB.fbMessage(context._fbid_, mes;
+    //console.log("Conetxt: ", context);
+    cb(context);
+  },
+};
 
+
+const getWit = () => {
+  return new Wit(Config.WIT_TOKEN, actions);
+};
+
+exports.getWit = getWit;
+
+// bot testing mode
+// http://stackoverflow.com/questions/6398196
+if (require.main === module) {
+  console.log("Bot testing mode.");
+  const client = getWit();
+  client.interactive();
 }
