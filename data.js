@@ -261,19 +261,19 @@ const messageContact = {
             "payload": {
                 "template_type": "generic",
                 "elements": [{
-                    "title": "Electrical Engineering",
-                    "subtitle": "2019 at Illinois Institute of Technology",
+                    "title": "Shahzil Sheikh",
+                    "subtitle": "Phone: 312-852-0877 Email: shazy792@gmail.com Github: shazy792",
                     //"image_url": "https://www.royalcanin.com/~/media/Royal-Canin/Product-Categories/cat-adult-landing-hero.ashx",
                     "buttons":[
               {
-                "type":"postback",
-                "title":"Start Chatting",
-                "payload":"USER_DEFINED_PAYLOAD"
+                "type":"web_url",
+                "url":"mailto:shazy792@gmail.com",
+                "title":"Email Me"
               },
               {
                 "type":"web_url",
-                "url":"https://petersapparel.parseapp.com/view_item?item_id=100",
-                "title":"View Website"
+                "url":"https://github.com/shazy792",
+                "title":"My Github"
               }                            
               ],
                 }]
