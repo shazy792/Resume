@@ -271,9 +271,9 @@ const messageContact = {
                 "title":"Email Me"
               },
               {
-                "type":"web_url",
-                "url":"https://github.com/shazy792",
-                "title":"My Github"
+                "type":"postback",
+                "title":"My Github",
+                "payload": "xyz"
               }                            
               ],
                 }]
