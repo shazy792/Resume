@@ -235,4 +235,5 @@ module.exports = {
   messageSkills: messageSkills,
   messageEducation: messageEducation,
   messageWork: messageWork,
+  mesageProjects: messageProjects,
 };

@@ -88,7 +88,11 @@ const actions = {
         msg = dat.messageWork;
       break;
       case 'projects':
-        msg = {text: "Projects Boy"};
+        FB.fbMessage(
+          context._fbid_,
+          {text: "Here are some of the projects that I have worked on."}
+          );
+        msg = dat.messageProjects;
       break;
       case 'personal':
         msg= {text: "Persoanl Yo"};
