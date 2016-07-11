@@ -266,14 +266,14 @@ const messageContact = {
                     //"image_url": "https://www.royalcanin.com/~/media/Royal-Canin/Product-Categories/cat-adult-landing-hero.ashx",
                     "buttons":[
               {
-                "type":"web_url",
-                "url":"mailto:shazy792@gmail.com",
-                "title":"Email Me"
-              },
-              {
                 "type":"postback",
                 "title":"My Github",
                 "payload": "xyz"
+              },
+              {
+                "type":"web_url",
+                "url":"mailto:shazy792@gmail.com",
+                "title":"Email Me"
               }                            
               ],
                 }]
