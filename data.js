@@ -142,8 +142,8 @@ const messageWork = {
             "payload": {
                 "template_type": "generic",
                 "elements": [{
-                    "title": "Key Sports Pvt Ltd.",
-                    "subtitle": "Intern 20xx  - 20xx",
+                    "title": "Student Employment Office, Illinois Institute of Technology",
+                    "subtitle": "Student Assistant 2016 - Date",
                     //"image_url": "https://www.royalcanin.com/~/media/Royal-Canin/Product-Categories/cat-adult-landing-hero.ashx",
                     "buttons": [{
                         "type": "postback",
@@ -151,13 +151,31 @@ const messageWork = {
                         "payload": "ex1",
                     }],
                 }, {
-                    "title": "A Levels",
-                    "subtitle": "2015 at The City Schools",
+                    "title": "Research and Development, Key Sports Pvt Ltd.",
+                    "subtitle": "Intern 2014 - 2015",
                     //"image_url": "http://messengerdemo.parseapp.com/img/gearvr.png",
                     "buttons": [{
-                        "type": "web_url",
-                        "url": "http://thecityschool.edu.pk/category/central-region/iqbal-campus-sialkot/",
-                        "title": "My School",
+                        "type": "postback",
+                        "title": "My Tasks Here",
+                        "payload": "ex2",
+                    }],
+                }, {
+                    "title": "IT Department, Standard Chartered Bank",
+                    "subtitle": "Intern Summer 2014",
+                    //"image_url": "http://messengerdemo.parseapp.com/img/gearvr.png",
+                    "buttons": [{
+                        "type": "postback",
+                        "title": "My Tasks Here",
+                        "payload": "ex3",
+                    }],
+                }, {
+                    "title": "Public Relations, Key Sports Pvt Ltd.",
+                    "subtitle": "Intern 2012 - 2014",
+                    //"image_url": "http://messengerdemo.parseapp.com/img/gearvr.png",
+                    "buttons": [{
+                        "type": "postback",
+                        "title": "My Tasks Here",
+                        "payload": "ex4",
                     }],
                 }]
             }
