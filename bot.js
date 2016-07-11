@@ -81,7 +81,7 @@ const actions = {
       break;
       case 'work':
       case 'experience':
-        msg = {text: "Blah exp at this comp"};
+        msg = dat.messageExperience;
       break;
       case 'projects':
         msg = {text: "Projects Boy"};
