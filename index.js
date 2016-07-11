@@ -99,19 +99,18 @@ app.post('/webhook', (req, res) => {
 				msg = dat.messageDatabase;
 			break;
 			case 'ex1':
-				msg = {text: "I Handled Data Management and Processing for Employment Records and also\
-				managed Jobs4Hawks, an online job posting portal."};
+				msg = {text: "I handled Data Management and Processing for employment records and also managed Jobs4Hawks, an online job posting portal."};
 			break;
 			case 'ex2':
-				msg = {text: "I designed and developed the hardware and software fot electrically heated jackets\
-				this lead to the company successfully introducing eclectrically heated jackets into the local market."};
+				msg = {text: "I designed and developed the hardware and software for electrically heated jackets.\
+				This lead to the company successfully introducing eclectrically heated jackets into the local market."};
 			break;
 			case 'ex3':
-				msg = {text: "I provied technical assistance to the bank empployees and performed routine updates and maintainance of\
+				msg = {text: "I provided technical assistance to the bank employees and Performed routine updates and maintainance of\
 				the bank computers."};
 			break;
 			case 'ex4':
-				msg = {text: "I handled Email and Telephonic communication with the companies local and international customers"};
+				msg = {text: "I handled Email and Telephonic communication with the company's local and international customers"};
 			break;
 			default:
 				msg = {text: "Payload: " + messaging.postback["payload"]};
