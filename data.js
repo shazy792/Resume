@@ -264,17 +264,14 @@ const messageContact = {
                     "title": "Electrical Engineering",
                     "subtitle": "2019 at Illinois Institute of Technology",
                     //"image_url": "https://www.royalcanin.com/~/media/Royal-Canin/Product-Categories/cat-adult-landing-hero.ashx",
-                    "buttons": [{
-                        "type": "web_url",
-                        "url": "mailto:shazy792@gmail.com",
-                        "title": "Email Me",
-                    }, {
-                        "type": "postback",
-                        //"url": "http://github.com/shazy792",
-                        "title": "My Github",
-                        "payload": "dummy data",
-                    },],
-                },]
+                    "buttons":[
+              {
+                "type":"postback",
+                "title":"Start Chatting",
+                "payload":"USER_DEFINED_PAYLOAD"
+              }              
+              ],
+                }]
             }
         }
     }
