@@ -81,7 +81,7 @@ const actions = {
       case 'projects':
         msg = {text: "Projects Boy"};
       break;
-      case 'persoanl':
+      case 'personal':
         msg= {text: "Persoanl Yo"};
       break;
       case 'achievements':
@@ -93,7 +93,7 @@ const actions = {
     }
 
     FB.fbMessage(context._fbid_, msg);
-    console.log("Conetxt: ", context);
+    //console.log("Conetxt: ", context);
     cb(context);
   },
 };
