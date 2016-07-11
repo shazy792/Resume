@@ -256,30 +256,26 @@ const messageAwards =   {
     }
 
 const messageContact = {
-        "attachment": {
-            "type": "template",
-            "payload": {
-                "template_type": "generic",
-                "elements": [{
-                    "title": "Shahzil Sheikh",
-                    "subtitle": "Phone: 312-852-0877 Email: shazy792@gmail.com Github: shazy792",
-                    //"image_url": "https://www.royalcanin.com/~/media/Royal-Canin/Product-Categories/cat-adult-landing-hero.ashx",
-                    "buttons":[
-              {
-                "type":"postback",
-                "title":"My Github",
-                "payload": "xyz"
-              },
-              {
-                "type":"web_url",
-                "url":"mailto:shazy792@gmail.com",
-                "title":"Email Me"
-              }                            
-              ],
+    "attachment": {
+        "type": "template",
+        "payload": {
+            "template_type": "generic",
+            "elements": [{
+                "title": "Shahzil Sheikh",
+                "subtitle": "Phone: 312-852-0877 Email: shazy792@gmail.com Github: shazy792",
+                "buttons": [{
+                    "type": "postback",
+                    "title": "My Github",
+                    "payload": "xyz"
+                }, {
+                    "type": "web_url",
+                    "url": "mailto:shazy792@gmail.com",
+                    "title": "Email Me"
                 }]
-            }
+            }]
         }
     }
+}
 
 // const messageContact =  {
 //         "attachment": {
