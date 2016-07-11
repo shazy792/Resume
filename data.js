@@ -262,7 +262,7 @@ const messageContact =   {
                 "template_type": "generic",
                 "elements": [{
                     "title": "Shahzil Sheikh",
-                    "subtitle": "Phone: 312-852-0877\n Email: shazy792@gmail.com \n Github: shazy792",
+                    "subtitle": "Phone: 312-852-0877 Email: shazy792@gmail.com Github: shazy792",
                     "buttons": [{
                         "type": "web_url",
                         "url": "mailto:shazy792@gmail.com",
