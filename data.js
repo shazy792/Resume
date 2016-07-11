@@ -255,7 +255,7 @@ const messageAwards =   {
         }
     }
 
-const messageContact =   {
+const messageContact =  {
         "attachment": {
             "type": "template",
             "payload": {
