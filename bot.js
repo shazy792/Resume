@@ -97,7 +97,7 @@ const actions = {
 
     }
 
-    FB.fbMessage(context._fbid_, mes;
+    FB.fbMessage(context._fbid_, mes);
     //console.log("Conetxt: ", context);
     cb(context);
   },
