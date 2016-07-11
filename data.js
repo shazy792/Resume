@@ -228,6 +228,34 @@ const messageProjects = {
         }
     }
 
+const messageAwards = {
+        "attachment": {
+            "type": "template",
+            "payload": {
+                "template_type": "generic",
+                "elements": [{
+                    "title": "ThinkChicago 2016",
+                    "subtitle": "An entreprenuerial event hosted by the City of Chicago.",
+                    //"image_url": "https://www.royalcanin.com/~/media/Royal-Canin/Product-Categories/cat-adult-landing-hero.ashx",
+                }, {
+                    "title": "CS 2050 Hackathon",
+                    "subtitle": "Winner",
+                    //"image_url": "http://messengerdemo.parseapp.com/img/gearvr.png",
+                    "buttons": [{
+                        "type": "postback",
+                        "title": "Learn More",
+                        "payload": "ax1",
+                    }],
+                }, {
+                    "title": "Dean's List",
+                    "subtitle": "Fall 2015, Spring 2016 & Summer 2016",
+                    //"image_url": "http://messengerdemo.parseapp.com/img/gearvr.png",
+                }]
+            }
+        }
+    }
+
+
 // Whatever I am going to use outside of this file.
 module.exports = {
   messageDatabase: messageDatabase,
@@ -237,4 +265,5 @@ module.exports = {
   messageEducation: messageEducation,
   messageWork: messageWork,
   messageProjects: messageProjects,
+  messageAwards: messageAwards,
 };
