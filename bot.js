@@ -81,6 +81,7 @@ const actions = {
       break;
       case 'work':
       case 'experience':
+        console.log("Got here!");
         msg = dat.messageExperience;
       break;
       case 'projects':
