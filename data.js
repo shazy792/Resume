@@ -272,8 +272,8 @@ const messageContact = {
               },
               {
                 "type":"web_url",
-                "title":"Start Chatting",
-                "url":"USER_DEFINED_PAYLOAD"
+                "url":"https://petersapparel.parseapp.com/view_item?item_id=100",
+                "title":"View Website"
               }                            
               ],
                 }]
