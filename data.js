@@ -189,7 +189,7 @@ const messageProjects = {
                 "template_type": "generic",
                 "elements": [{
                     "title": "Home Automation System",
-                    //"subtitle": "Student Assistant 2016 - Date",
+                    "subtitle": "A smart home solution with an accompanying Android App.",
                     //"image_url": "https://www.royalcanin.com/~/media/Royal-Canin/Product-Categories/cat-adult-landing-hero.ashx",
                     "buttons": [{
                         "type": "postback",
@@ -197,8 +197,8 @@ const messageProjects = {
                         "payload": "px1",
                     }],
                 }, {
-                    "title": "Line Following Robot",
-                    //"subtitle": "Intern 2014 - 2015",
+                    "title": "Hotel Management System",
+                    "subtitle": "A database managment system tailored for a Hotel.",
                     //"image_url": "http://messengerdemo.parseapp.com/img/gearvr.png",
                     "buttons": [{
                         "type": "postback",
@@ -206,8 +206,8 @@ const messageProjects = {
                         "payload": "px2",
                     }],
                 }, {
-                    "title": "Facebook Messenger Chatbot",
-                    //"subtitle": "Intern 2014 - 2015",
+                    "title": "Resume Chatbot",
+                    "subtitle": "A Resume powered by an Artificial Intelligence.",
                     //"image_url": "http://messengerdemo.parseapp.com/img/gearvr.png",
                     "buttons": [{
                         "type": "postback",
@@ -215,8 +215,8 @@ const messageProjects = {
                         "payload": "px3",
                     }],
                 }, {
-                    "title": "Hotel Management System",
-                    //"subtitle": "Intern 2012 - 2014",
+                    "title": "Line Following Robot",
+                    //"subtitle": "Intern 2014 - 2015",
                     //"image_url": "http://messengerdemo.parseapp.com/img/gearvr.png",
                     "buttons": [{
                         "type": "postback",

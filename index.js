@@ -117,15 +117,16 @@ app.post('/webhook', (req, res) => {
 				needed to design custom PCB's and an Android Application."}
 			break;
 			case 'px2':
-				msg = {text: "My team and I used multiple LDR's along with the HandyBoard platform to build a Line Following Robot.\
-				The programmign language used was a version of C adapted for the platform."}
+				msg = {text: "I designed and developed a Hotel Management System that using Visual Basic .Net as the programming language\
+				 and Microsoft Access as the Database Engine."}
 			break;
 			case 'px3':
 				msg = {text: "I used the node.js platfrom along with wit.ai natural language engine and the Heroku cloud computing platfrom to\
 				deploy this chatbot on to the Facebook Messenger Platform"};
 			break;
 			case 'px4':
-				msg = {text: "I designed and developed a Hotel Management System that using Visual Basic .Net as the programming language and Microsoft Access as the Database Engine."}
+				msg = {text: "My team and I used multiple LDR's along with the HandyBoard platform to build a Line Following Robot.\
+				The programmign language used was a version of C adapted for the platform."}
 			break;
 			default:
 				msg = {text: "Payload: " + messaging.postback["payload"]};
