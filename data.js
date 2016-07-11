@@ -272,7 +272,7 @@ const messageContact = {
                         "type": "web_url",
                         "url": "http://github.com/shazy792",
                         "title": "My Github"
-                    }],
+                    },],
                 },]
             }
         }
