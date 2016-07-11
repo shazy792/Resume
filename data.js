@@ -267,11 +267,12 @@ const messageContact = {
                     "buttons": [{
                         "type": "web_url",
                         "url": "mailto:shazy792@gmail.com",
-                        "title": "Email Me"
+                        "title": "Email Me",
                     }, {
-                        "type": "web_url",
-                        "url": "http://github.com/shazy792",
-                        "title": "My Github"
+                        "type": "postback",
+                        //"url": "http://github.com/shazy792",
+                        "title": "My Github",
+                        "payload": "dummy data",
                     },],
                 },]
             }
