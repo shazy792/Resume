@@ -78,6 +78,10 @@ const actions = {
       case 'skills':
         msg = {text: "Skills is triggered Bro!"};
       break;
+      case 'work':
+      case 'experience':
+        msg = {text: "Blah exp at this comp"};
+      break;
       case 'projects':
         msg = {text: "Projects Boy"};
       break;
@@ -88,7 +92,7 @@ const actions = {
         msg = {text: "Trying to Achieve!"};
       break;
       default:
-        msg = {text: "Sorry but I ma unable to undersatnd your query. Please Contact Shahzil at shazy792@hotmail.com"};
+        msg = {text: "Sorry but I ma unable to undersatnd your query. Please Contact Shahzil at shazy792@hotmail.com" + context.question};
 
     }
 
