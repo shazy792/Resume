@@ -88,10 +88,6 @@ const actions = {
           );
         //msg = dat.messageWork;
         msg = dat.messageContact;
-        FB.fbMessage(
-          context._fbid_,
-          {text: "Here"}
-          );
       break;
       case 'projects':
         FB.fbMessage(
