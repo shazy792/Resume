@@ -271,9 +271,9 @@ const messageContact = {
                 "payload":"USER_DEFINED_PAYLOAD"
               },
               {
-                "type":"postback",
+                "type":"web_url",
                 "title":"Start Chatting",
-                "payload":"USER_DEFINED_PAYLOAD"
+                "url":"USER_DEFINED_PAYLOAD"
               }                            
               ],
                 }]
