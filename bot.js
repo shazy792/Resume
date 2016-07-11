@@ -70,6 +70,7 @@ const actions = {
   // fetch-weather bot executes
   ['getAnswer'](sessionId, context, cb) {
     let msg = {text: "Sorry but I am unable to understand your query."};
+    console.log("Questin", context.question);
     switch(context.question){
       case 'education':
       case 'school':
