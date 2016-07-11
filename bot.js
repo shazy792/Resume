@@ -69,8 +69,31 @@ const actions = {
 
   // fetch-weather bot executes
   ['getAnswer'](sessionId, context, cb) {
-    let msg = {text: "Sorry but I am unable to understand your query."};
-    console.log("Questin", context.question);
+
+    FB.fbMessage(context._fbid_, questionHandler());
+    //console.log("Conetxt: ", context);
+    cb(context);
+  },
+};
+
+
+const getWit = () => {
+  return new Wit(Config.WIT_TOKEN, actions);
+};
+
+exports.getWit = getWit;
+
+// bot testing mode
+// http://stackoverflow.com/questions/6398196
+if (require.main === module) {
+  console.log("Bot testing mode.");
+  const client = getWit();
+  client.interactive();
+}
+
+// Function to handle data response to the Queries made by wit
+function questionHandler(){
+  let msg = {text: "Sorry but I am unable to understand your query."};
     switch(context.question){
       case 'education':
       case 'school':
@@ -97,29 +120,6 @@ const actions = {
 
     }
 
-    FB.fbMessage(context._fbid_, msg);
-    //console.log("Conetxt: ", context);
-    cb(context);
-  },
-};
-
-
-const getWit = () => {
-  return new Wit(Config.WIT_TOKEN, actions);
-};
-
-exports.getWit = getWit;
-
-// bot testing mode
-// http://stackoverflow.com/questions/6398196
-if (require.main === module) {
-  console.log("Bot testing mode.");
-  const client = getWit();
-  client.interactive();
-}
-
-// Function to handle data response to the Queries made by wit
-function questionHandler(context){
-  
+  return msg;
 
 }
