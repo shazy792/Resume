@@ -86,6 +86,7 @@ app.post('/webhook', (req, res) => {
 
 	  if (messaging.postback){
 	  	// Add postback Handler here.
+	  	let mes = {text: "Got Postback and Ignored Payload : " + messaging.postback["payload"]};
 	  	FB.fbMessage(
 	  		sender,
 	  		mes
