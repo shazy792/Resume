@@ -182,6 +182,51 @@ const messageWork = {
         }
     }
 
+const messageProjects = {
+        "attachment": {
+            "type": "template",
+            "payload": {
+                "template_type": "generic",
+                "elements": [{
+                    "title": "Home Automation System",
+                    //"subtitle": "Student Assistant 2016 - Date",
+                    //"image_url": "https://www.royalcanin.com/~/media/Royal-Canin/Product-Categories/cat-adult-landing-hero.ashx",
+                    "buttons": [{
+                        "type": "postback",
+                        "title": "Learn More",
+                        "payload": "px1",
+                    }],
+                }, {
+                    "title": "Line Following Robot",
+                    //"subtitle": "Intern 2014 - 2015",
+                    //"image_url": "http://messengerdemo.parseapp.com/img/gearvr.png",
+                    "buttons": [{
+                        "type": "postback",
+                        "title": "Learn More",
+                        "payload": "px2",
+                    }],
+                }, {
+                    "title": "Facebook Messenger Chatbot"
+                    //"image_url": "http://messengerdemo.parseapp.com/img/gearvr.png",
+                    "buttons": [{
+                        "type": "postback",
+                        "title": "Learn More",
+                        "payload": "px3",
+                    }],
+                }, {
+                    "title": "Hotel Management System",
+                    //"subtitle": "Intern 2012 - 2014",
+                    //"image_url": "http://messengerdemo.parseapp.com/img/gearvr.png",
+                    "buttons": [{
+                        "type": "postback",
+                        "title": "Learn More",
+                        "payload": "px4",
+                    }],
+                }]
+            }
+        }
+    }
+
 // Whatever I am going to use outside of this file.
 module.exports = {
   messageDatabase: messageDatabase,
