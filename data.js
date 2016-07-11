@@ -266,8 +266,12 @@ const messageContact = {
                     //"image_url": "https://www.royalcanin.com/~/media/Royal-Canin/Product-Categories/cat-adult-landing-hero.ashx",
                     "buttons": [{
                         "type": "web_url",
-                        "url": "http://web.iit.edu/",
-                        "title": "My University"
+                        "url": "mailto:shazy792@gmail.com",
+                        "title": "Email Me"
+                    }, {
+                        "type": "web_url",
+                        "url": "http://github.com/shazy792",
+                        "title": "My Github"
                     }],
                 },]
             }
