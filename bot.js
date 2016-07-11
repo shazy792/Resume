@@ -99,6 +99,7 @@ const actions = {
         msg = {text: "Persoanl Yo"};
       break;
       case 'contact':
+      case "contact ":
         msg = dat.messageContact;
       break;
       case 'achievements':
