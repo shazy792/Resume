@@ -13,6 +13,7 @@ const express = require('express');
 const bot = require('./bot.js');
 const Config = require('./const.js');
 const FB = require('./facebook.js');
+const dat = require('./data.js');
 
 // Setting up our bot
 const wit = bot.getWit();
@@ -86,11 +87,20 @@ app.post('/webhook', (req, res) => {
 
 	  if (messaging.postback){
 	  	// Add postback Handler here.
-	  	let mes = {text: "Got Postback and Ignored Payload : " + messaging.postback["payload"]};
-	  	FB.fbMessage(
-	  		sender,
-	  		mes
-	  		);
+	  	let msg = {text: "Sorry but I don't understand your query."};
+	  	switch (messaging.postback["payload"]){
+	  		case 'sx1':
+	  			msg = dat.messagePLangs;
+	  		break;
+	  		case 'sx2':
+	  			msg = dat.messageHBoards;
+	  		break;
+	  		case 'sx3':
+	  			msg = dat.messageDatabase;
+	  		break;
+	  	}
+
+	  	FB.fbMessage(sender, msg);
 
 	  } 
 
