@@ -142,21 +142,23 @@ const messageWork = {
             "payload": {
                 "template_type": "generic",
                 "elements": [{
-                    "title": "KeySports Pvt Ltd",
-                    "subtitle": "Intern",
-                    "payload": "ex1",
+                    "title": "Key Sports Pvt Ltd.",
+                    "subtitle": "Intern 20xx  - 20xx",
+                    //"image_url": "https://www.royalcanin.com/~/media/Royal-Canin/Product-Categories/cat-adult-landing-hero.ashx",
+                    "buttons": [{
+                        "type": "postback",
+                        "title": "My Tasks Here",
+                        "payload": "ex1",
+                    }],
                 }, {
-                    "title": "Python",
-                    "image_url": "https://realpython.com/learn/python-first-steps/images/pythonlogo.jpg",
-                    "item_url": "https://en.wikipedia.org/wiki/Python_(programming_language)",
-                }, {
-                    "title": "Visual Basic .Net/6",
-                    "image_url": "https://regmedia.co.uk/2013/11/13/visual_studio.jpg?x=1200&y=794",
-                    "item_url": "https://en.wikipedia.org/wiki/Visual_Basic_.NET",
-                }, {
-                    "title": "Android",
-                    "image_url": "http://logok.org/wp-content/uploads/2014/06/Android-logo-wordmark.png",
-                    "item_url": "https://en.wikipedia.org/wiki/Android_(operating_system)",
+                    "title": "A Levels",
+                    "subtitle": "2015 at The City Schools",
+                    //"image_url": "http://messengerdemo.parseapp.com/img/gearvr.png",
+                    "buttons": [{
+                        "type": "web_url",
+                        "url": "http://thecityschool.edu.pk/category/central-region/iqbal-campus-sialkot/",
+                        "title": "My School",
+                    }],
                 }]
             }
         }
