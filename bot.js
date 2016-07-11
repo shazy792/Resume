@@ -72,7 +72,7 @@ const actions = {
   ['getAnswer'](sessionId, context, cb) {
     let msg = {text: "Sorry but I am unable to understand your query."};
     console.log("Conetxt: ", context.question);
-    switch(context.question){
+    switch(context.question.trim()){
       case 'education':
       case 'school':
         msg = dat.messageEducation;
@@ -86,7 +86,8 @@ const actions = {
           context._fbid_,
           {text: "Here is some of my previous work history."}
           );
-        msg = dat.messageWork;
+        //msg = dat.messageWork;
+        msg = dat.messageContact;
       break;
       case 'projects':
         FB.fbMessage(
@@ -99,7 +100,7 @@ const actions = {
         msg = {text: "Persoanl Yo"};
       break;
       case 'contact':
-      case "contact ":
+      case 'contact ':
         msg = dat.messageContact;
       break;
       case 'achievements':
