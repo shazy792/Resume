@@ -136,7 +136,7 @@ const messageDatabase = {
     }
 }
 
-const messageExperience = {
+const messageWork = {
         "attachment": {
             "type": "template",
             "payload": {
@@ -169,5 +169,5 @@ module.exports = {
   messagePLangs: messagePLangs,
   messageSkills: messageSkills,
   messageEducation: messageEducation,
-  messageExperience: messageExperience,
+  messageWork: messageWork,
 };
