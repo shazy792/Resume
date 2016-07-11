@@ -72,6 +72,7 @@ const actions = {
     let msg = {text: "NOTHING"};
     switch(context.question){
       case 'education':
+      case 'school':
         msg = {text:"Education is triggered!"};
       break;
       case 'skills':
