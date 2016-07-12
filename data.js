@@ -262,12 +262,12 @@ const messageContact = {
             "template_type": "generic",
             "elements": [{
                 "title": "Shahzil Sheikh",
-                "subtitle": "Phone: 312-852-0877 \nEmail: shazy792@gmail.com \nGithub: shazy792",
+                "subtitle": "Phone: 312-852-0877   Email: shazy792@gmail.com   Github: shazy792",
                 "buttons":[
               {
                 "type":"web_url",
-                "url":"https://petersapparel.parseapp.com/view_item?item_id=100",
-                "title":"View Website"
+                "url":"mailto:shazy792@gmail.com",
+                "title":"Email Me"
               },
               {
                 "type":"postback",
