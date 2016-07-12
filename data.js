@@ -266,13 +266,13 @@ const messageContact = {
                 "buttons":[
               {
                 "type":"web_url",
-                "url":"mailto:shazy792@gmail.com",
-                "title":"Email Me"
+                "url":"https://github.com/shazy792",
+                "title":"My GitHub"
               },
               {
-                "type":"postback",
-                "title":"Start Chatting",
-                "payload":"USER_DEFINED_PAYLOAD"
+                "type":"web_url",
+                "url":"https://facebook.com/shazy792",
+                "title":"My Faebook"
               }]
             }]
         }
