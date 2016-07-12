@@ -266,7 +266,7 @@ const messageContact = {
                 "buttons":[
               {
                 "type":"web_url",
-                "url":"mailto:shazy792@gmail.com",
+                "url":"https://mailto:shazy792@gmail.com",
                 "title":"Email Me"
               },
               {
