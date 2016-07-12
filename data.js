@@ -266,7 +266,7 @@ const messageContact = {
                 "buttons":[
               {
                 "type":"web_url",
-                "url":"https://petersapparel.parseapp.com/view_item?item_id=100",
+                "url":"mailto:shazy792@gmail.com",
                 "title":"Email Me"
               },
               {
