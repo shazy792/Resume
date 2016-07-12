@@ -264,12 +264,12 @@ const messageContact = {
                 "title": "Shahzil Sheikh",
                 "subtitle": "Phone: 312-852-0877 Email: shazy792@gmail.com Github: shazy792",
                 "buttons": [{
-                    "type": "postback",
+                    "type": "web_url",
                     "title": "My Github",
-                    "payload": "xyz"
+                    "url": "http://xyz.com"
                 }, {
                     "type": "web_url",
-                    "url": "mailto:shazy792@gmail.com",
+                    "url": "http://www.gmail.com",
                     "title": "Email Me"
                 }]
             }]
@@ -287,8 +287,7 @@ const messageContact = {
 //                     "subtitle": "Phone: 312-852-0877",
 //                     "buttons": [{
 //                         "type": "web_url",
-//                         "url": "mailto:shazy792@gmail.com",
-//                         "title": "Email Me"
+//                         "url": "mailto:shazy792@gmail.com", //                         "title": "Email Me"
 //                     }, {
 //                         "type": "web_url",
 //                         "url": "https://github.com/shazy792",
