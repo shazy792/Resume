@@ -87,7 +87,7 @@ app.post('/webhook', (req, res) => {
 
 	  if (messaging.postback){
 		// Add postback Handler here.
-		let msg = {text: "Sorry but I don't understand your query."};
+		let msg = {text: "Sorry but I am unable to undersatnd your query. Please Contact Shahzil at shazy792@gmail.com "};
 		switch (messaging.postback["payload"]){
 			case 'sx1':
 				msg = dat.messagePLangs;
@@ -133,7 +133,7 @@ app.post('/webhook', (req, res) => {
 				for children."}
 			break;
 			default:
-				msg = {text: "Payload: " + messaging.postback["payload"]};
+				msg = {text: "Sorry but I am unable to undersatnd your query. Please Contact Shahzil at shazy792@gmail.com "};
 		}
 
 		FB.fbMessage(sender, msg);

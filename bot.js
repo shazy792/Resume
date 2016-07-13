@@ -70,8 +70,7 @@ const actions = {
 
   // fetch-weather bot executes
   ['getAnswer'](sessionId, context, cb) {
-    let msg = {text: "Sorry but I am unable to understand your query."};
-    console.log("Conetxt: ", context.question);
+    let msg = {text: "Sorry but I am unable to undersatnd your query. Please Contact Shahzil at shazy792@gmail.com "};
     switch(context.question.trim()){
       case 'education':
       case 'school':
@@ -112,8 +111,11 @@ const actions = {
           );
         msg = dat.messageAwards;
       break;
+      case 'question':
+        msg = {text: "You can ask about my Education, Work Experience, Skills, Projects, Personal Experience and Achievements"};
+      break;
       default:
-        msg = {text: "Sorry but I ma unable to undersatnd your query. Please Contact Shahzil at shazy792@gmail.com " + context.question};
+        msg = {text: "Sorry but I am unable to undersatnd your query. Please Contact Shahzil at shazy792@gmail.com "};
 
     }
 
