@@ -96,7 +96,7 @@ const actions = {
         msg = dat.messageProjects;
       break;
       case 'personal':
-        msg = {text: "Persoanl Yo"};
+        msg = {text: "I am the President of the Pakistani Student Association and a member of the IEEE & ACM associations at my university."};
       break;
       case 'contact':
         FB.fbMessage(
