@@ -262,7 +262,7 @@ const messageContact = {
             "template_type": "generic",
             "elements": [{
                 "title": "Shahzil Sheikh",
-                "subtitle": "Phone: 312-852-0877 \t Email: shazy792@gmail.com \t Github: shazy792",
+                "subtitle": "312-852-0877 shazy792@gmail.com",
                 "buttons":[
               {
                 "type":"web_url",
@@ -278,27 +278,6 @@ const messageContact = {
         }
     }
 }
-
-// const messageContact =  {
-//         "attachment": {
-//             "type": "template",
-//             "payload": {
-//                 "template_type": "generic",
-//                 "elements": [{
-//                     "title": "Shahzil Sheikh",
-//                     "subtitle": "Phone: 312-852-0877",
-//                     "buttons": [{
-//                         "type": "web_url",
-//                         "url": "mailto:shazy792@gmail.com", //                         "title": "Email Me"
-//                     }, {
-//                         "type": "web_url",
-//                         "url": "https://github.com/shazy792",
-//                         "title": "Github"
-//                     }],
-//                 }]
-//             }
-//         }
-//     }
 
 
 // Whatever I am going to use outside of this file.

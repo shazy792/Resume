@@ -129,7 +129,7 @@ app.post('/webhook', (req, res) => {
 				The programmign language used was a version of C adapted for the platform."}
 			break;
 			case 'ax1':
-				msg = {text:"My team an=d I built a web app that uses open data provided by the city of Chicago to calculate a Quality of Life index\
+				msg = {text:"My team and I built a web app that uses open data provided by the city of Chicago to calculate a Quality of Life index\
 				for children."}
 			break;
 			case 'start':
