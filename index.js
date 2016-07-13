@@ -132,6 +132,9 @@ app.post('/webhook', (req, res) => {
 				msg = {text:"My team an=d I built a web app that uses open data provided by the city of Chicago to calculate a Quality of Life index\
 				for children."}
 			break;
+			case 'start':
+			  msg = {text: "Hi I am the resume of Shahzil Sheikh. Might I suggest asking about my Education, Work Experience, Skills, Projects, Personal Experience and Achievements"};
+			break;
 			default:
 				msg = {text: "Sorry but I am unable to undersatnd your query. Please Contact Shahzil at shazy792@gmail.com "};
 		}
