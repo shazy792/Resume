@@ -14,6 +14,7 @@ const bot = require('./bot.js');
 const Config = require('./const.js');
 const FB = require('./facebook.js');
 const dat = require('./data.js');
+const path = require('path');
 
 // Setting up our bot
 const wit = bot.getWit();
@@ -60,6 +61,10 @@ console.log("I'm wating for you @" + PORT);
 // index. Let's say something fun
 app.get('/', function(req, res) {
   res.send('"Only those who will risk going too far can possibly find out how far one can go." - T.S. Eliot');
+});
+
+app.get('/', function(req, res) {
+  res.sendFile(path.join(__dirname+'/privacypolicy.htm'));
 });
 
 // Webhook verify setup using FB_VERIFY_TOKEN
