@@ -133,10 +133,10 @@ app.post('/webhook', (req, res) => {
 				for children."}
 			break;
 			case 'start':
-			  msg = {text: "Hi I am the resume of Shahzil Sheikh. Might I suggest asking about my Education, Work Experience, Skills, Projects, Personal Experience and Achievements"};
+			  msg = {text: "Hi I am the resume of Shahzil Sheikh. Might I suggest asking about my Education, Work Experience, Skills, Projects, Personal Experience and Achievements"}
 			break;
 			default:
-				msg = {text: "Sorry but I am unable to undersatnd your query. Please Contact Shahzil at shazy792@gmail.com "};
+				msg = {text: "Sorry but I am unable to undersatnd your query. Please Contact Shahzil at shazy792@gmail.com "}
 		}
 
 		FB.fbMessage(sender, msg);

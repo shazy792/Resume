@@ -112,11 +112,10 @@ const actions = {
         msg = dat.messageAwards;
       break;
       case 'question':
-        msg = {text: "You can ask about my Education, Work Experience, Skills, Projects, Personal Experience and Achievements"};
+        msg = {text: "You can ask about my Education, Work Experience, Skills, Projects, Personal Experience and Achievements"}
       break;
       default:
-        msg = {text: "Sorry but I am unable to undersatnd your query. Please Contact Shahzil at shazy792@gmail.com "};
-
+        msg = {text: "Sorry but I am unable to undersatnd your query. Please Contact Shahzil at shazy792@gmail.com "}
     }
 
     FB.fbMessage(context._fbid_, msg);
