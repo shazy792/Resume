@@ -175,8 +175,10 @@ app.post('/webhook', (req, res) => {
 		  // Let's forward the message to the Wit.ai Bot Engine
 		  // This will run all actions until our bot has nothing left to do
 		  if (msg.toLowerCase().includes('hello')||msg.toLowerCase().includes('hi')){
-		  	FB.fbMessage(sender,
-		  		{text: "Hi I am the resume of Shahzil Sheikh. You can ask about my Education, Work Experience, Skills, Projects, Personal Experience and Achievements"};
+		  	let mess = {text: "Hi I am the resume of Shahzil Sheikh. You can ask about my Education, Work Experience, Skills, Projects, Personal Experience and Achievements"}
+		  	FB.fbMessage(
+		  		sender,
+		 		mess
 		  		);
 		  	}
 		  //}
