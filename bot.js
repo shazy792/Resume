@@ -32,28 +32,28 @@ const actions = {
     // Our bot has something to say!
     // Let's retrieve the Facebook user whose session belongs to from context
     // TODO: need to get Facebook user name
-    /*const recipientId = context._fbid_;
-    if (recipientId) {
-      // Yay, we found our recipient!
-      // Let's forward our bot response to her.
-      FB.fbMessage(recipientId, message, (err, data) => {
-        if (err) {
-          console.log(
-            'Oops! An error occurred while forwarding the response to',
-            recipientId,
-            ':',
-            err
-          );
-        }
+    // const recipientId = context._fbid_;
+    // if (recipientId) {
+    //   // Yay, we found our recipient!
+    //   // Let's forward our bot response to her.
+    //   FB.fbMessage(recipientId, message, (err, data) => {
+    //     if (err) {
+    //       console.log(
+    //         'Oops! An error occurred while forwarding the response to',
+    //         recipientId,
+    //         ':',
+    //         err
+    //       );
+    //     }
 
-        // Let's give the wheel back to our bot
-        cb();
-      });
-    } else {
-      console.log('Oops! Couldn\'t find user in context:', context);
-      // Giving the wheel back to our bot
-      cb();
-    }*/
+    //     // Let's give the wheel back to our bot
+    //     cb();
+    //   });
+    // } else {
+    //   console.log('Oops! Couldn\'t find user in context:', context);
+    //   // Giving the wheel back to our bot
+    //   cb();
+    // }
     cb();
   },
   merge(sessionId, context, entities, message, cb) {
